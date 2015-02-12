@@ -19,7 +19,6 @@ module.exports = function ctoj(str) {
   rules.rules = rules.rules.map(function(rule) {
     if ('rule' != rule.type) return rule;
     rule.selectors.forEach(function(selector) {
-      selector = selector.replace(/^\./, '');
       obj[selector] = attrs = {};
       rule.declarations.forEach(function(dec) {
         attrs[cc(dec.property.replace(/^-/, ''))] = dec.value;
