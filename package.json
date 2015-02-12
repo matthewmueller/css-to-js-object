@@ -1,0 +1,22 @@
+{
+  "name": "css-to-js-object",
+  "version": "0.0.1",
+  "description": "convert css to a JS object",
+  "keywords": [],
+  "author": "Matthew Mueller <matt@lapwinglabs.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/lapwinglabs/css-to-js-object.git"
+  },
+  "dependencies": {
+    "autoprefixer-core": "^5.1.5",
+    "css": "^2.1.0",
+    "rework": "^1.0.1",
+    "to-camel-case": "^0.2.1"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*"
+  },
+  "main": "index"
+}

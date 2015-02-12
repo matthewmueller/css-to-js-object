@@ -1,0 +1,31 @@
+/**
+ * Modal.css
+ */
+
+.modal {
+  border-style: dotted;
+}
+
+.header {
+  color: yellow;
+}
+
+.body {
+  background: green;
+}
+
+.footer,
+.another {
+  border: 1px solid green;
+  border-radius: 7px;
+}
+
+.something.else {
+  transform: translateZ(0);
+}
+
+#tag {
+  margin: 10px;
+  padding: 20px;
+  color: green;
+}
