@@ -41,30 +41,38 @@ From:
   padding: 20px;
   color: green;
 }
+
+test-pilot {
+  color: blue
+}
+
+span {
+  text-align: center;
+}
 ```
 
 To:
 
 ```js
 {
-  "modal": {
+  ".modal": {
     "borderStyle": "dotted"
   },
-  "header": {
+  ".header": {
     "color": "yellow"
   },
-  "body": {
+  ".body": {
     "background": "green"
   },
-  "footer": {
+  ".footer": {
     "border": "1px solid green",
     "borderRadius": "7px"
   },
-  "another": {
+  ".another": {
     "border": "1px solid green",
     "borderRadius": "7px"
   },
-  "something.else": {
+  ".something.else": {
     "webkitTransform": "translateZ(0)",
     "transform": "translateZ(0)"
   },
@@ -72,6 +80,12 @@ To:
     "margin": "10px",
     "padding": "20px",
     "color": "green"
+  },
+  "test-pilot": {
+    "color": "blue"
+  },
+  "span": {
+    "textAlign": "center"
   }
 }
 ```
