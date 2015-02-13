@@ -9,7 +9,7 @@ var assert = require('assert');
 var str = read(__dirname + '/fixtures/modal.css', 'utf8');
 
 var obj = ctoj(str);
-// console.log(JSON.stringify(obj, true, 2));
+console.log(JSON.stringify(obj, true, 2));
 assert.deepEqual(obj, {
   ".modal": {
     "borderStyle": "dotted"
@@ -29,13 +29,17 @@ assert.deepEqual(obj, {
     "borderRadius": "7px"
   },
   ".something.else": {
-    "webkitTransform": "translateZ(0)",
+    "WebkitTransform": "translateZ(0)",
     "transform": "translateZ(0)"
   },
   "#tag": {
     "margin": "10px",
     "padding": "20px",
-    "color": "green"
+    "color": "green",
+    "WebkitUserSelect": "none",
+    "MozUserSelect": "none",
+    "MsUserSelect": "none",
+    "userSelect": "none"
   },
   "test-pilot": {
     "color": "blue"

@@ -10,7 +10,7 @@ var css = require('css');
  * Export `ctoj`
  */
 
-module.exports = function ctoj(str) {
+module.exports = function ctoj(str, options) {
   var rules = css.parse(ap.process(str).css).stylesheet;
   var obj = {};
 
@@ -21,7 +21,7 @@ module.exports = function ctoj(str) {
     rule.selectors.forEach(function(selector) {
       obj[selector] = attrs = {};
       rule.declarations.forEach(function(dec) {
-        attrs[cc(dec.property.replace(/^-/, ''))] = dec.value;
+        attrs[cc(dec.property)] = dec.value;
       });
     })
   });
