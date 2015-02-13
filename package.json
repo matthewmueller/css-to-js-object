@@ -1,6 +1,6 @@
 {
   "name": "css-to-js-object",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "convert css to a JS object",
   "keywords": [],
   "author": "Matthew Mueller <matt@lapwinglabs.com>",
